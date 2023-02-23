@@ -17,6 +17,6 @@ app.get('/restaurants', async (req, res) => {
 });
 
 app.listen(port, () => {
-  sequelize.sync();
-  console.log("Your server is listening on port " + port);
-});
+  console.log(`Server listening at http://localhost:${port}/restaurants`)
+})
+
